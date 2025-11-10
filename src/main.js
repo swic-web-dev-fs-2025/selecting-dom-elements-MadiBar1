@@ -37,5 +37,5 @@ if (missingElement) {
 }
 
 function handleClick() {
-  console.log("Element clicked!");
+  console.info("Element clicked!");
 }

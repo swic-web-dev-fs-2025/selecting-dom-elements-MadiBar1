@@ -40,5 +40,5 @@ function handleClick() {
   console.info("Element clicked!");
 }
 
-const title = document.querySelector("main .card .card-title");
+const title = document.querySelector('[data-title-id="1"]');
 title.textContent = "Updated Title";

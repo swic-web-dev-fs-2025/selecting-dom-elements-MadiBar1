@@ -28,3 +28,14 @@ document.querySelectorAll("card").forEach((card) => {
 const product = document.querySelector("[data-product-id=2]");
 const priceElement = product.querySelector(".price");
 priceElement.textContent = "$24.99";
+
+const missingElement = document.querySelector(".non-existent");
+if (missingElement) {
+  missingElement.addEventListener("click", handleClick);
+} else {
+  console.warn("Element not found, cannot add event listener.");
+}
+
+function handleClick() {
+  console.log("Element clicked!");
+}

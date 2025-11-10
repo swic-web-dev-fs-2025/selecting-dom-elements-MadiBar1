@@ -5,3 +5,9 @@ document.querySelector("#app").innerHTML = `
     Hello Vite!
   </h1>
 `;
+
+const HeaderElement = document.querySelector("main-element");
+console.info(HeaderElement);
+
+const navLinks = document.querySelectorAll(`.navbar a`);
+console.info(navLinks);

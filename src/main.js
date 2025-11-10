@@ -39,3 +39,6 @@ if (missingElement) {
 function handleClick() {
   console.info("Element clicked!");
 }
+
+const title = document.querySelector("main .card .card-title");
+title.textContent = "Updated Title";

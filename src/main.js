@@ -20,3 +20,11 @@ navInternalLinks.forEach((link) => {
 document.querySelectorAll("input").forEach((element) => {
   element.style.outline = "2px solid gold";
 });
+
+document.querySelectorAll("card").forEach((card) => {
+  card.setAttribute("data-viewed", "true");
+});
+
+const product = document.querySelector("[data-product-id=2]");
+const priceElement = product.querySelector(".price");
+priceElement.textContent = "$24.99";
